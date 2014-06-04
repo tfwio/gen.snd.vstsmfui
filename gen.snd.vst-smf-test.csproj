@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F8A9D892-7F27-4501-8DDF-4970674477DA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <RootNamespace>modest100</RootNamespace>
+    <AssemblyName>gen.snd.vst-smf-test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\oIo\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <DocumentationFile>bin\Debug\MidiSmf.xml</DocumentationFile>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>gen.snd.vst-smf-test.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputType>WinExe</OutputType>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'Jacobi_x86' ">
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86x64' ">
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x64</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'XP_x86' ">
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>..\..\Project\packages\ICSharpCode.TextEditor.3.2.1.6466\lib\Net20\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobi.Vst.Core">
+      <HintPath>..\..\AssemblyReferences\vstnet\Win32_Release\Jacobi.Vst.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacobi.Vst.Interop">
+      <HintPath>..\..\AssemblyReferences\vstnet\Win32_Release\Jacobi.Vst.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\AssemblyReferences\NAudio\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Condition=" '$(Platform)' == 'XP_x86' " Include="System.Core">
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\cor3.core\Include\TextEditorUtil.cs">
+      <Link>TextEditorUtil.cs</Link>
+    </Compile>
+    <Compile Include="Forms\Naudios_VolumeSlider.cs" />
+    <Compile Include="Forms\VolumeSlider.cs" />
+    <Compile Include="Forms\VolumeSlider.Designer.cs">
+      <DependentUpon>VolumeSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VstListView.cs" />
+    <Compile Include="Images.Designer.cs">
+      <DependentUpon>Images.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Internals\CustomControlView.cs" />
+    <Compile Include="Internals\MasterViewContainer.cs" />
+    <Compile Include="..\cor3.core\Internals\UndoRedoCommandManager.cs">
+      <Link>Includes\Internals\UndoRedoCommandManager.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\Internals\ViewPoint.cs">
+      <Link>Includes\Internals\ViewPoint.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System.Windows.Forms\SplashForm.cs">
+      <Link>Includes\Core\SplashForm.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\ControlUtil.cs">
+      <Link>Includes\Core\ControlUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\DoubleMathExtension.cs">
+      <Link>Includes\Core\DoubleMathExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\EnumExtension.cs">
+      <Link>Includes\Core\EnumExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\Serial.cs">
+      <Link>Includes\Core\Serial.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\System.DialogUtil.cs">
+      <Link>Includes\Core\System.DialogUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.core\System\WTF.cs">
+      <Link>Includes\Core\WTF.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.forms\Forms\ToolStrip\ToolStripUpDown.cs">
+      <Link>Includes\Core\ToolStripUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\cor3.forms\Forms\WinTheme.cs">
+      <Link>Includes\Interop\WinTheme.cs</Link>
+    </Compile>
+    <Compile Include="..\gen.snd.common\Interop\WinMM.cs">
+      <Link>Includes\Interop\WinMM.cs</Link>
+    </Compile>
+    <Compile Include="Internals\MouseState.cs" />
+    <Compile Include="Internals\MouseStateExtension.cs" />
+    <Compile Include="Internals\Renderer_SelectionBox.cs" />
+    <Compile Include="Internals\RenderStateType.cs" />
+    <Compile Include="Internals\RowViewSkinState.cs" />
+    <Compile Include="Internals\RowViewStateInfo.cs" />
+    <Compile Include="Lib\IMidiViewContainer.cs" />
+    <Compile Include="Renderers\GraphicsPens.cs" />
+    <Compile Include="Renderers\MidiPianoViewRenderer.r086.cs" />
+    <Compile Include="Rendering\Decible.cs" />
+    <Compile Include="Rendering\PianoGridRenderer.cs" />
+    <Compile Include="Rendering\SliderControl.cs" />
+    <Compile Include="Forms\Clock.cs" />
+    <Compile Include="Forms\Clock.Designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TestForm.cs" />
+    <Compile Include="Forms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MidiTree.cs" />
+    <Compile Include="Forms\PluginManagerComponent.cs" />
+    <Compile Include="Icons.Designer.cs">
+      <DependentUpon>Icons.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Lib\ActionModifyMidiMessage.cs" />
+    <Compile Include="Lib\intobyte.cs" />
+    <Compile Include="Lib\IRendererSettings.cs" />
+    <Compile Include="Lib\LatencyCalculator.cs" />
+    <Compile Include="Lib\MidiControlBase.cs" />
+    <Compile Include="Lib\MidiEditorAction.cs" />
+    <Compile Include="Lib\MidiEditType.cs" />
+    <Compile Include="Lib\MidiEnumerator.cs" />
+    <Compile Include="Lib\MidiMessager.cs" />
+    <Compile Include="Lib\RpnMessager.cs" />
+    <Compile Include="Lib\setting32.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <DependentUpon>AssemblyInfo.cs.tpl</DependentUpon>
+    </Compile>
+    <Compile Include="Rendering\SliderRenderer.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Views\MidiPianoContainer.cs" />
+    <Compile Include="Views\OutputView.Designer.cs">
+      <DependentUpon>OutputView.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Views\PluginModule.cs" />
+    <Compile Include="Views\PluginModule.Designer.cs">
+      <DependentUpon>PluginModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimeConfigurationContainer.cs" />
+    <Compile Include="Views\TimeConfigurationView.cs" />
+    <Compile Include="Views\TimeConfigurationView.Designer.cs">
+      <DependentUpon>TimeConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MidiVstPluginListView.cs" />
+    <Compile Include="Views\MidiEventContainer.cs" />
+    <Compile Include="Views\MidiEventControl.cs" />
+    <Compile Include="Views\MidiNoteContainer.cs" />
+    <Compile Include="Views\MidiNoteView.cs" />
+    <Compile Include="Views\MidiPianoView.cs" />
+    <Compile Include="Views\MidiPianoViewSettings.cs">
+      <DependentUpon>MidiPianoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MidiVstPluginListContainer.cs" />
+    <Compile Include="Views\OutputView.cs" />
+    <EmbeddedResource Include="Forms\Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ModestForm.resx">
+      <DependentUpon>ModestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <CustomToolNamespace>System</CustomToolNamespace>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MidiPianoView.resx">
+      <DependentUpon>MidiPianoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MidiVstPluginListContainer.resx">
+      <DependentUpon>MidiVstPluginListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MidiEventControl.resx">
+      <DependentUpon>MidiEventControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MidiNoteView.resx">
+      <DependentUpon>MidiNoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OutputView.resx">
+      <DependentUpon>OutputView.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OutputView.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PluginModule.resx">
+      <DependentUpon>PluginModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TimeConfigurationView.resx">
+      <DependentUpon>TimeConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <Folder Include="Includes" />
+    <Folder Include="Forms" />
+    <Folder Include="Includes\Interop" />
+    <Folder Include="Includes\Core" />
+    <Folder Include="Includes\Internals" />
+    <Folder Include="Lib" />
+    <Folder Include="Internals" />
+    <Folder Include="Renderers" />
+    <Folder Include="Rendering" />
+    <Folder Include="Properties" />
+    <Folder Include="Views" />
+    <Folder Include="res" />
+    <EmbeddedResource Include="res\imidi.bmp" />
+    <EmbeddedResource Include="res\midi.psd" />
+    <Compile Include="app.cs" />
+    <Compile Include="Forms\ModestForm.cs" />
+    <Compile Include="Forms\SECURITY_ATTRIBUTES.cs" />
+    <Content Include="app.config">
+      <DependentUpon>app.cs</DependentUpon>
+    </Content>
+    <None Include="files.include.iss">
+      <DependentUpon>Setup Midi Smf Tool.iss</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\AssemblyInfo.cs.tpl" />
+    <None Condition=" '$(Configuration)' == 'Release' " Include="settings-rel.cfg">
+      <Link>settings.cfg</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Condition=" '$(Configuration)' == 'Debug' " Include="settings.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Setup Midi Smf Tool.iss" />
+    <None Include="SvnInfo.cmd" />
+    <None Include="SvnInfo.proj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gen.snd.common\gen.snd.common.csproj">
+      <Project>{669C9CD9-8B80-4D6D-B5D7-A39B1224A50E}</Project>
+      <Name>gen.snd.common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\gen.snd.vst\gen.snd.vst.csproj">
+      <Project>{3AE94169-B621-4352-9661-E5B293083C14}</Project>
+      <Name>gen.snd.vst</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+</Project>
