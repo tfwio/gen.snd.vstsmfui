@@ -764,7 +764,7 @@ namespace modest100.Forms
 
 		#endregion
 		#region .ctor (and friends)
-		gen.snd.wave.views.SplashFormController sc;
+		SplashFormController sc;
 		public ModestForm(IList<MasterViewContainer> tasks)
 		{
 			sc = new SplashFormController(this,Icons._2012_09_04_csmidi,true);
