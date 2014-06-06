@@ -8,7 +8,7 @@
  */
 using System;
 using System.Linq;
-using DspAudio.Midi;
+using gen.snd.Midi;
 using modest100.Midi;
 
 namespace modest100.Forms

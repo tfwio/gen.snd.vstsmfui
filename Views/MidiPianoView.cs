@@ -16,10 +16,10 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
-using DspAudio.Midi;
-using DspAudio.Vst;
+using gen.snd;
+using gen.snd.Forms;
+using gen.snd.Midi;
+using gen.snd.Vst;
 //using modēst100.Forms;
 using Needs=modest100.Internals.RenderStateType;
 #endregion

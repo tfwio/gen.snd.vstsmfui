@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Revision #194")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("tfw.co 2005-2012")]
-[assembly: AssemblyProduct("GenericWav (DspAudio/SoundLib)")]
+[assembly: AssemblyProduct("GenericWav (gen.snd/SoundLib)")]
 [assembly: AssemblyCopyright("tfwroble@gmail.com;jacobi @vstnet.codeplex.com;VST by Steinberg")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

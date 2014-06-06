@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Internals;
 using System.Linq;
 
-using DspAudio;
+using gen.snd;
 
 namespace modest100.Forms
 {

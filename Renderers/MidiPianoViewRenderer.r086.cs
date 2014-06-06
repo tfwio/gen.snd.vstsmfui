@@ -16,8 +16,8 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Forms;
 
-using DspAudio.Forms;
-using DspAudio.Midi;
+using gen.snd.Forms;
+using gen.snd.Midi;
 //using modēst100.Forms;
 #endregion
 namespace modest100.Forms

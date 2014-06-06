@@ -15,14 +15,13 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
-using DspAudio.Midi;
-using DspAudio.Vst;
-using DspAudio.Vst.Forms;
-using DspAudio.Vst.Module;
-using DspAudio.Vst.Xml;
-using GenericWAV.Views;
+using gen.snd;
+using gen.snd.Forms;
+using gen.snd.Midi;
+using gen.snd.Vst;
+using gen.snd.Vst.Forms;
+using gen.snd.Vst.Module;
+using gen.snd.Vst.Xml;
 using Jacobi.Vst.Core;
 using modest100.Internals;
 using NAudio.Wave;
@@ -765,7 +764,7 @@ namespace modest100.Forms
 
 		#endregion
 		#region .ctor (and friends)
-		SplashFormController sc;
+		gen.snd.wave.views.SplashFormController sc;
 		public ModestForm(IList<MasterViewContainer> tasks)
 		{
 			sc = new SplashFormController(this,Icons._2012_09_04_csmidi,true);

@@ -10,9 +10,9 @@ using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
-using DspAudio.Midi;
+using gen.snd;
+using gen.snd.Forms;
+using gen.snd.Midi;
 
 namespace modest100.Forms
 {

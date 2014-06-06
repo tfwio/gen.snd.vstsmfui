@@ -12,12 +12,12 @@ using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
-using DspAudio.Midi;
-using DspAudio.Vst;
-using DspAudio.Vst.Forms;
-using DspAudio.Vst.Module;
+using gen.snd;
+using gen.snd.Forms;
+using gen.snd.Midi;
+using gen.snd.Vst;
+using gen.snd.Vst.Forms;
+using gen.snd.Vst.Module;
 using Jacobi.Vst.Core;
 using NAudio.Wave;
 

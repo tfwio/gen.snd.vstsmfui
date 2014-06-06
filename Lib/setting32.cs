@@ -13,9 +13,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
-using DspAudio;
-using DspAudio.Midi;
-using DspAudio.Vst;
+using gen.snd;
+using gen.snd.Midi;
+using gen.snd.Vst;
 
 namespace modest100.Forms
 {

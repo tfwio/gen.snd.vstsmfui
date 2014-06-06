@@ -8,9 +8,9 @@
  */
 using System;
 using System.Windows.Forms;
-using DspAudio;
-using DspAudio.Vst;
-using DspAudio.Vst.Module;
+using gen.snd;
+using gen.snd.Vst;
+using gen.snd.Vst.Module;
 using Jacobi.Vst.Core;
 using NAudio.Wave;
 

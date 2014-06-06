@@ -11,8 +11,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
+using gen.snd;
+using gen.snd.Forms;
 // using modest100.Forms;
 // modēst100
 #endregion

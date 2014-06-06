@@ -10,10 +10,10 @@ using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
-using DspAudio.Midi;
-using DspAudio.Midi.Common;
+using gen.snd;
+using gen.snd.Forms;
+using gen.snd.Midi;
+using gen.snd.Midi.Common;
 
 // 7285Hz
 namespace modest100.Forms

@@ -10,8 +10,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-using DspAudio;
-using DspAudio.Forms;
+using gen.snd;
+using gen.snd.Forms;
 
 namespace modest100.Forms
 {

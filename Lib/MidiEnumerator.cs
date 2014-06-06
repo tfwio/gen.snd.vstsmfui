@@ -10,10 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using DspAudio.Vst;
+using gen.snd.Vst;
 using Jacobi.Vst.Core;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	class MidiEnumerator
 	{

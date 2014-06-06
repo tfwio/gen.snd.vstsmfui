@@ -31,8 +31,8 @@ namespace modest100
 			Application.SetCompatibleTextRenderingDefault(false);
 			
 			// Customize Time Configuration
-			DspAudio.TimeConfiguration.Instance.Latency = 100;
-			DspAudio.TimeConfiguration.Instance.Rate = 48000;
+			gen.snd.TimeConfiguration.Instance.Latency = 100;
+			gen.snd.TimeConfiguration.Instance.Rate = 48000;
 			ViewCollection = ViewPoint.EnumerateViewTypes<MasterViewContainer>(System.Reflection.Assembly.GetExecutingAssembly());
 			
 			List<string> views = new List<string>();

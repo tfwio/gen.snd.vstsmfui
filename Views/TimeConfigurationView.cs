@@ -56,7 +56,7 @@ namespace modest100.Views
 		void Event_ValueChanged(object sender, EventArgs e)
 		{
 			bool wasPlaying = false;
-			if (SampleRate != DspAudio.TimeConfiguration.Instance.Rate)
+			if (SampleRate != gen.snd.TimeConfiguration.Instance.Rate)
 			{
 				
 				if (this.UserInterface.VstContainer.VstPlayer.IsRunning) {
@@ -65,8 +65,8 @@ namespace modest100.Views
 				}
 			}
 			
-			DspAudio.TimeConfiguration.Instance.Rate = Convert.ToInt32(SampleRate);
-			DspAudio.TimeConfiguration.Instance.Latency = Convert.ToInt32(setting.LatencyInMilliseconds);
+			gen.snd.TimeConfiguration.Instance.Rate = Convert.ToInt32(SampleRate);
+			gen.snd.TimeConfiguration.Instance.Latency = Convert.ToInt32(setting.LatencyInMilliseconds);
 			
 			setting.ResetValue(int.Parse(comboSampleRate.Text),Convert.ToInt32(numSamples.Value));
 			labelMs.Text = string.Format("{0:N} ms",setting.LatencyInMilliseconds);

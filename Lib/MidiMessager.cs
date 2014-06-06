@@ -12,7 +12,7 @@ using System.Linq;
 
 using Jacobi.Vst.Core;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	class MidiMessager
 	{

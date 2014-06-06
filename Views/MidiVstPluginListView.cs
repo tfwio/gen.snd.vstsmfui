@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DspAudio;
-using DspAudio.Midi;
-using DspAudio.Vst;
-using DspAudio.Vst.Module;
+using gen.snd;
+using gen.snd.Midi;
+using gen.snd.Vst;
+using gen.snd.Vst.Module;
 using Jacobi.Vst.Core;
 
 namespace modest100.Forms

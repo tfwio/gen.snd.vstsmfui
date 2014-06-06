@@ -9,7 +9,7 @@
 using System;
 using System.Linq;
 
-namespace DspAudio.Midi
+namespace gen.snd.Midi
 {
 	[Flags]
 	public enum MidiEditType
