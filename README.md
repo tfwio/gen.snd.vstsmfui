@@ -34,4 +34,4 @@ Soon enough, documentation will evolve---explaining where prescedence of bug-fix
 [gen.snd.vst]: https://github.com/tfwio/gen.snd.vst
 [gen.snd]: https://github.com/tfwio/gen.snd
 [gen.snd.smf]: (https://github.com/tfwio/gen.snd.smf
-[issues]: https://github.com/tfwio/gen.snd.vstsmfui/issues
+[issues]: https://github.com/tfwio/gen.snd/issues
