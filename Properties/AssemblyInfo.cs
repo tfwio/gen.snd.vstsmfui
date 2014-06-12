@@ -8,12 +8,12 @@ using System.Runtime.InteropServices;
 // change them to the information which is associated with the assembly
 // you compile.
 
-[assembly: AssemblyTitle("modest100 (Standard MIDI Format) + VST v2.4 technology")]
-[assembly: AssemblyDescription("Revision #194")]
+[assembly: AssemblyTitle("modest (Standard MIDI Format) + VST v2.4 technology")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("tfw.co 2005-2012")]
 [assembly: AssemblyProduct("GenericWav (gen.snd/SoundLib)")]
-[assembly: AssemblyCopyright("tfwroble@gmail.com;jacobi @vstnet.codeplex.com;VST by Steinberg")]
+[assembly: AssemblyCopyright("tfwroble@gmail.com")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

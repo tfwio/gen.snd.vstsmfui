@@ -64,7 +64,7 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="NAudio">
-      <HintPath>..\..\AssemblyReferences\NAudio\Debug\NAudio.dll</HintPath>
+      <HintPath>..\..\AssemblyReferences\NAudio\r559-v1.7.1.17\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -81,8 +81,12 @@
     <Compile Include="..\cor3.core\Include\TextEditorUtil.cs">
       <Link>TextEditorUtil.cs</Link>
     </Compile>
-    <Compile Include="Forms\Naudios_VolumeSlider.cs" />
-    <Compile Include="Forms\VolumeSlider.cs" />
+    <Compile Include="Forms\Naudios_VolumeSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\VolumeSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\VolumeSlider.Designer.cs">
       <DependentUpon>VolumeSlider.cs</DependentUpon>
     </Compile>
@@ -91,16 +95,20 @@
       <DependentUpon>Images.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Internals\CustomControlView.cs" />
+    <Compile Include="Internals\CustomControlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Internals\MasterViewContainer.cs" />
     <Compile Include="..\cor3.core\Internals\UndoRedoCommandManager.cs">
       <Link>Includes\Internals\UndoRedoCommandManager.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\Internals\ViewPoint.cs">
       <Link>Includes\Internals\ViewPoint.cs</Link>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="..\cor3.core\System.Windows.Forms\SplashForm.cs">
       <Link>Includes\Core\SplashForm.cs</Link>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="..\cor3.core\System\ControlUtil.cs">
       <Link>Includes\Core\ControlUtil.cs</Link>
@@ -122,6 +130,7 @@
     </Compile>
     <Compile Include="..\cor3.forms\Forms\ToolStrip\ToolStripUpDown.cs">
       <Link>Includes\Core\ToolStripUpDown.cs</Link>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="..\cor3.forms\Forms\WinTheme.cs">
       <Link>Includes\Interop\WinTheme.cs</Link>
@@ -141,16 +150,22 @@
     <Compile Include="Rendering\Decible.cs" />
     <Compile Include="Rendering\PianoGridRenderer.cs" />
     <Compile Include="Rendering\SliderControl.cs" />
-    <Compile Include="Forms\Clock.cs" />
+    <Compile Include="Forms\Clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Clock.Designer.cs">
       <DependentUpon>Clock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestForm.cs" />
+    <Compile Include="Forms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MidiTree.cs" />
-    <Compile Include="Forms\PluginManagerComponent.cs" />
+    <Compile Include="Forms\PluginManagerComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Icons.Designer.cs">
       <DependentUpon>Icons.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -159,7 +174,9 @@
     <Compile Include="Lib\intobyte.cs" />
     <Compile Include="Lib\IRendererSettings.cs" />
     <Compile Include="Lib\LatencyCalculator.cs" />
-    <Compile Include="Lib\MidiControlBase.cs" />
+    <Compile Include="Lib\MidiControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Lib\MidiEditorAction.cs" />
     <Compile Include="Lib\MidiEditType.cs" />
     <Compile Include="Lib\MidiEnumerator.cs" />
@@ -179,26 +196,40 @@
       <DependentUpon>OutputView.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Views\PluginModule.cs" />
+    <Compile Include="Views\PluginModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\PluginModule.Designer.cs">
       <DependentUpon>PluginModule.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\TimeConfigurationContainer.cs" />
-    <Compile Include="Views\TimeConfigurationView.cs" />
+    <Compile Include="Views\TimeConfigurationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\TimeConfigurationView.Designer.cs">
       <DependentUpon>TimeConfigurationView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MidiVstPluginListView.cs" />
+    <Compile Include="Views\MidiVstPluginListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\MidiEventContainer.cs" />
-    <Compile Include="Views\MidiEventControl.cs" />
+    <Compile Include="Views\MidiEventControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\MidiNoteContainer.cs" />
-    <Compile Include="Views\MidiNoteView.cs" />
-    <Compile Include="Views\MidiPianoView.cs" />
+    <Compile Include="Views\MidiNoteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MidiPianoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Views\MidiPianoViewSettings.cs">
       <DependentUpon>MidiPianoView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MidiVstPluginListContainer.cs" />
-    <Compile Include="Views\OutputView.cs" />
+    <Compile Include="Views\OutputView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <EmbeddedResource Include="Forms\Clock.resx">
       <DependentUpon>Clock.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,22 +274,12 @@
     <EmbeddedResource Include="Views\TimeConfigurationView.resx">
       <DependentUpon>TimeConfigurationView.cs</DependentUpon>
     </EmbeddedResource>
-    <Folder Include="Includes" />
-    <Folder Include="Forms" />
-    <Folder Include="Includes\Interop" />
-    <Folder Include="Includes\Core" />
-    <Folder Include="Includes\Internals" />
-    <Folder Include="Lib" />
-    <Folder Include="Internals" />
-    <Folder Include="Renderers" />
-    <Folder Include="Rendering" />
-    <Folder Include="Properties" />
-    <Folder Include="Views" />
-    <Folder Include="res" />
     <EmbeddedResource Include="res\imidi.bmp" />
     <EmbeddedResource Include="res\midi.psd" />
     <Compile Include="app.cs" />
-    <Compile Include="Forms\ModestForm.cs" />
+    <Compile Include="Forms\ModestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\SECURITY_ATTRIBUTES.cs" />
     <Content Include="app.config">
       <DependentUpon>app.cs</DependentUpon>
