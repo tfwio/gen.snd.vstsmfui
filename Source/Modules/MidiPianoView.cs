@@ -1,13 +1,4 @@
-﻿#region Using
-/*
- * Created by SharpDevelop.
- * User: tfooo
- * Date: 11/12/2005
- * Time: 4:19 PM
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -20,14 +11,12 @@ using gen.snd;
 using gen.snd.Forms;
 using gen.snd.Midi;
 using gen.snd.Vst;
-//using modēst100.Forms;
-using Needs=modest100.Internals.RenderStateType;
-#endregion
 namespace modest100.Forms
 {
-	
+	/// <summary></summary>
 	public class MidiPianoView : MidiControlBase, IUi, IUiOffset, INotifyPropertyChanged
 	{
+        /// <summary></summary>
 		class MouseStateObject
 		{
 			public FloatPoint Down { get;set; }
@@ -74,8 +63,8 @@ namespace modest100.Forms
 				);
 			}
 		}
-		
-		void Event_BarLocation(object sender, EventArgs e)
+
+        void Event_BarLocation(object sender, EventArgs e)
 		{
 			Notify("BarPosition");
 			GetOurNotesAgain();
@@ -86,8 +75,10 @@ namespace modest100.Forms
 		SampleClock timing = new SampleClock();
 		List<int> ChanelNumbers = new List<int>();
 		bool SameChanelComparer(MidiNote a, MidiNote b) { return a.Ch == b.Ch; }
-		
-		public List<MidiMessage> SetOfNotes {
+
+        /// <summary></summary>
+        public List<MidiMessage> SetOfNotes
+        {
 			get { return setOfNotes; }
 			set { setOfNotes = value; }
 		} List<MidiMessage> setOfNotes = new List<MidiMessage>();
@@ -173,13 +164,17 @@ namespace modest100.Forms
 		#endregion
 
 		#region Focus Redirection
-		
-		public bool CanFocus {
+
+        /// <summary></summary>
+        public bool CanFocus
+        {
 			get { return canFocus; }
 			set { canFocus = value; }
 		} bool canFocus = true;
-		
-		public new bool Focused {
+
+        /// <summary></summary>
+        public new bool Focused
+        {
 			get { return vScrollBar1.Focused; }
 			set { if (value) vScrollBar1.Focus(); }
 		}
@@ -192,18 +187,22 @@ namespace modest100.Forms
 		}
 		
 		#region Events XOffset, YOffset
-		
-		public event EventHandler XOffsetChanged;
-		protected virtual void OnXOffsetChanged(EventArgs e)
+
+        /// <summary></summary>
+        public event EventHandler XOffsetChanged;
+        /// <summary></summary>
+        protected virtual void OnXOffsetChanged(EventArgs e)
 		{
 			if (XOffsetChanged != null) {
 				XOffsetChanged(this, e);
 				OnSizeChanged(null);
 			}
 		}
-		
-		public event EventHandler YOffsetChanged;
-		protected virtual void OnYOffsetChanged(EventArgs e)
+
+        /// <summary></summary>
+        public event EventHandler YOffsetChanged;
+        /// <summary></summary>
+        protected virtual void OnYOffsetChanged(EventArgs e)
 		{
 			if (YOffsetChanged != null) {
 				YOffsetChanged(this, e);

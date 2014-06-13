@@ -85,6 +85,9 @@
     <Compile Include="..\cor3.core\Include\TextEditorUtil.cs">
       <Link>Source\Common.Extensions\TextEditorUtil.cs</Link>
     </Compile>
+    <Compile Include="..\gen.snd.common\Source\Interop\WinMM.cs">
+      <Link>Includes\Interop\WinMM.cs</Link>
+    </Compile>
     <Compile Include="Source\Modules\MidiEventControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,15 +141,9 @@
     <Compile Include="..\cor3.forms\Forms\WinTheme.cs">
       <Link>Includes\Interop\WinTheme.cs</Link>
     </Compile>
-    <Compile Include="..\gen.snd.common\Interop\WinMM.cs">
-      <Link>Includes\Interop\WinMM.cs</Link>
-    </Compile>
     <Compile Include="Source\Internals\MouseState.cs" />
     <Compile Include="Source\Internals\MouseStateExtension.cs" />
-    <Compile Include="Source\Internals\Renderer_SelectionBox.cs" />
     <Compile Include="Source\Internals\RenderStateType.cs" />
-    <Compile Include="Source\Internals\RowViewSkinState.cs" />
-    <Compile Include="Source\Internals\RowViewStateInfo.cs" />
     <Compile Include="Source\Common\IMidiViewContainer.cs" />
     <Compile Include="Source\Rendering\GraphicsPens.cs" />
     <Compile Include="Source\Rendering\MidiPianoViewRenderer.r086.cs" />
@@ -270,6 +267,7 @@
       <DependentUpon>app.cs</DependentUpon>
     </Content>
     <None Include="Properties\AssemblyInfo.cs.tpl" />
+    <None Include="README.md" />
     <None Condition=" '$(Configuration)' == 'Release' " Include="settings-rel.cfg">
       <Link>settings.cfg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

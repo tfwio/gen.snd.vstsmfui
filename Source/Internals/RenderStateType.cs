@@ -26,21 +26,19 @@ using System.Windows.Forms;
 
 namespace modest100.Internals
 {
+    /// <summary></summary>
+    [FlagsAttribute]
+    public enum RenderStateType { None, Select, Deselect, Background, Mouse, MouseWheel, Text, Notes, XScroll, YScroll }
 
-
-	
-
-
-
-	
-	[FlagsAttribute]
-	public enum RenderStateType { None, Select, Deselect, Background, Mouse, MouseWheel, Text, Notes, XScroll, YScroll }
-
+    /// <summary></summary>
 	public interface ITrackMouse
 	{
-		bool HasMouseDownPoint { get; }
-		FloatPoint MouseDownPoint { get;set; }
-		FloatPoint MouseMovePoint { get;set; }
+        /// <summary></summary>
+        bool HasMouseDownPoint { get; }
+        /// <summary></summary>
+        FloatPoint MouseDownPoint { get; set; }
+        /// <summary></summary>
+        FloatPoint MouseMovePoint { get; set; }
 	}
 
 }
