@@ -85,7 +85,9 @@
     <Compile Include="..\cor3.core\Include\TextEditorUtil.cs">
       <Link>Source\Common.Extensions\TextEditorUtil.cs</Link>
     </Compile>
-    <Compile Include="Source\Modules\MidiEventControl.cs" />
+    <Compile Include="Source\Modules\MidiEventControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Source\Views\Naudios_VolumeSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
