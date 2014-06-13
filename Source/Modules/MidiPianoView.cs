@@ -11,6 +11,7 @@ using gen.snd;
 using gen.snd.Forms;
 using gen.snd.Midi;
 using gen.snd.Vst;
+using Needs = modest100.Internals.RenderStateType;
 namespace modest100.Forms
 {
 	/// <summary></summary>
