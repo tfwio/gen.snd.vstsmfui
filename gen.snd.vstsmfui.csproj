@@ -83,22 +83,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\cor3.core\Include\TextEditorUtil.cs">
-      <Link>TextEditorUtil.cs</Link>
+      <Link>Source\Common.Extensions\TextEditorUtil.cs</Link>
     </Compile>
-    <Compile Include="Forms\Naudios_VolumeSlider.cs">
+    <Compile Include="Source\Modules\MidiEventControl.cs" />
+    <Compile Include="Source\Views\Naudios_VolumeSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\VolumeSlider.cs">
+    <Compile Include="Source\Views\VolumeSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\VolumeSlider.Designer.cs">
+    <Compile Include="Source\Views\VolumeSlider.Designer.cs">
       <DependentUpon>VolumeSlider.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VstListView.cs" />
-    <Compile Include="Internals\CustomControlView.cs">
+    <Compile Include="Source\Common.Extensions\VstListView.cs" />
+    <Compile Include="Source\Internals\CustomControlView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Internals\MasterViewContainer.cs" />
+    <Compile Include="Source\Internals\MasterViewContainer.cs" />
     <Compile Include="..\cor3.core\Internals\UndoRedoCommandManager.cs">
       <Link>Includes\Internals\UndoRedoCommandManager.cs</Link>
     </Compile>
@@ -138,105 +139,99 @@
     <Compile Include="..\gen.snd.common\Interop\WinMM.cs">
       <Link>Includes\Interop\WinMM.cs</Link>
     </Compile>
-    <Compile Include="Internals\MouseState.cs" />
-    <Compile Include="Internals\MouseStateExtension.cs" />
-    <Compile Include="Internals\Renderer_SelectionBox.cs" />
-    <Compile Include="Internals\RenderStateType.cs" />
-    <Compile Include="Internals\RowViewSkinState.cs" />
-    <Compile Include="Internals\RowViewStateInfo.cs" />
-    <Compile Include="Lib\IMidiViewContainer.cs" />
-    <Compile Include="Renderers\GraphicsPens.cs" />
-    <Compile Include="Renderers\MidiPianoViewRenderer.r086.cs" />
-    <Compile Include="Rendering\Decible.cs" />
-    <Compile Include="Rendering\PianoGridRenderer.cs" />
-    <Compile Include="Rendering\SliderControl.cs" />
-    <Compile Include="Forms\Clock.cs">
+    <Compile Include="Source\Internals\MouseState.cs" />
+    <Compile Include="Source\Internals\MouseStateExtension.cs" />
+    <Compile Include="Source\Internals\Renderer_SelectionBox.cs" />
+    <Compile Include="Source\Internals\RenderStateType.cs" />
+    <Compile Include="Source\Internals\RowViewSkinState.cs" />
+    <Compile Include="Source\Internals\RowViewStateInfo.cs" />
+    <Compile Include="Source\Common\IMidiViewContainer.cs" />
+    <Compile Include="Source\Rendering\GraphicsPens.cs" />
+    <Compile Include="Source\Rendering\MidiPianoViewRenderer.r086.cs" />
+    <Compile Include="Source\Rendering\Decible.cs" />
+    <Compile Include="Source\Rendering\PianoGridRenderer.cs" />
+    <Compile Include="Source\Rendering\SliderControl.cs" />
+    <Compile Include="Source\Views\Clock.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Clock.Designer.cs">
+    <Compile Include="Source\Views\Clock.Designer.cs">
       <DependentUpon>Clock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TestForm.cs">
+    <Compile Include="Source\Views\TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TestForm.Designer.cs">
+    <Compile Include="Source\Views\TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MidiTree.cs" />
-    <Compile Include="Forms\PluginManagerComponent.cs">
+    <Compile Include="Source\Common.Extensions\MidiTree.cs" />
+    <Compile Include="Source\Views\PluginManagerComponent.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Icons.Designer.cs">
       <DependentUpon>Icons.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Lib\ActionModifyMidiMessage.cs" />
-    <Compile Include="Lib\intobyte.cs" />
-    <Compile Include="Lib\IRendererSettings.cs" />
-    <Compile Include="Lib\LatencyCalculator.cs" />
-    <Compile Include="Lib\MidiControlBase.cs">
+    <Compile Include="Source\Common\ActionModifyMidiMessage.cs" />
+    <Compile Include="Source\Common.Extensions\intobyte.cs" />
+    <Compile Include="Source\Common\IRendererSettings.cs" />
+    <Compile Include="Source\Common.Extensions\LatencyCalculator.cs" />
+    <Compile Include="Source\Common\MidiControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Lib\MidiEditorAction.cs" />
-    <Compile Include="Lib\MidiEditType.cs" />
-    <Compile Include="Lib\MidiEnumerator.cs" />
-    <Compile Include="Lib\MidiMessager.cs" />
-    <Compile Include="Lib\RpnMessager.cs" />
-    <Compile Include="Lib\setting32.cs" />
+    <Compile Include="Source\Common.Extensions\MidiEditorAction.cs" />
+    <Compile Include="Source\Models\MidiEditType.cs" />
+    <Compile Include="Source\Common.Extensions\MidiEnumerator.cs" />
+    <Compile Include="Source\Common.Extensions\MidiMessager.cs" />
+    <Compile Include="Source\Common.Extensions\RpnMessager.cs" />
+    <Compile Include="Source\Models\setting32.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <DependentUpon>AssemblyInfo.cs.tpl</DependentUpon>
     </Compile>
-    <Compile Include="Rendering\SliderRenderer.cs" />
+    <Compile Include="Source\Rendering\SliderRenderer.cs" />
     <Compile Include="Strings.Designer.cs">
       <DependentUpon>Strings.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Views\MidiPianoContainer.cs" />
-    <Compile Include="Views\OutputView.Designer.cs">
+    <Compile Include="Source\Modules\MidiPianoContainer.cs" />
+    <Compile Include="Source\Modules\OutputView.Designer.cs">
       <DependentUpon>OutputView.resx</DependentUpon>
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Views\PluginModule.cs">
+    <Compile Include="Source\Modules\PluginModule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\PluginModule.Designer.cs">
+    <Compile Include="Source\Modules\PluginModule.Designer.cs">
       <DependentUpon>PluginModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\TimeConfigurationContainer.cs" />
-    <Compile Include="Views\TimeConfigurationView.cs">
+    <Compile Include="Source\Modules\MidiVstPluginListView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\TimeConfigurationView.Designer.cs">
-      <DependentUpon>TimeConfigurationView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MidiVstPluginListView.cs">
+    <Compile Include="Source\Modules\MidiEventContainer.cs" />
+    <Compile Include="Source\Modules\MidiNoteContainer.cs" />
+    <Compile Include="Source\Modules\MidiNoteView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\MidiEventContainer.cs" />
-    <Compile Include="Views\MidiEventControl.cs">
+    <Compile Include="Source\Modules\MidiPianoView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\MidiNoteContainer.cs" />
-    <Compile Include="Views\MidiNoteView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\MidiPianoView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\MidiPianoViewSettings.cs">
+    <Compile Include="Source\Modules\MidiPianoViewSettings.cs">
       <DependentUpon>MidiPianoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MidiVstPluginListContainer.cs" />
-    <Compile Include="Views\OutputView.cs">
+    <Compile Include="Source\Modules\MidiVstPluginListContainer.cs" />
+    <Compile Include="Source\Modules\OutputView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <EmbeddedResource Include="Forms\Clock.resx">
+    <EmbeddedResource Include="Source\Modules\MidiEventControl.resx">
+      <DependentUpon>MidiEventControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Views\Clock.resx">
       <DependentUpon>Clock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TestForm.resx">
+    <EmbeddedResource Include="Source\Views\TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ModestForm.resx">
+    <EmbeddedResource Include="Source\Views\ModestForm.resx">
       <DependentUpon>ModestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Icons.resx">
@@ -247,41 +242,31 @@
       <CustomToolNamespace>System</CustomToolNamespace>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MidiPianoView.resx">
+    <EmbeddedResource Include="Source\Modules\MidiPianoView.resx">
       <DependentUpon>MidiPianoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MidiVstPluginListContainer.resx">
+    <EmbeddedResource Include="Source\Modules\MidiVstPluginListContainer.resx">
       <DependentUpon>MidiVstPluginListView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MidiEventControl.resx">
-      <DependentUpon>MidiEventControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\MidiNoteView.resx">
+    <EmbeddedResource Include="Source\Modules\MidiNoteView.resx">
       <DependentUpon>MidiNoteView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\OutputView.resx">
+    <EmbeddedResource Include="Source\Modules\OutputView.resx">
       <DependentUpon>OutputView.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>OutputView.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\PluginModule.resx">
+    <EmbeddedResource Include="Source\Modules\PluginModule.resx">
       <DependentUpon>PluginModule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\TimeConfigurationView.resx">
-      <DependentUpon>TimeConfigurationView.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="app.cs" />
-    <Compile Include="Forms\ModestForm.cs">
+    <Compile Include="Source\Views\ModestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SECURITY_ATTRIBUTES.cs" />
+    <Compile Include="Source\Models\SECURITY_ATTRIBUTES.cs" />
     <Content Include="app.config">
       <DependentUpon>app.cs</DependentUpon>
     </Content>
-    <None Include="files.include.iss">
-      <DependentUpon>Setup Midi Smf Tool.iss</DependentUpon>
-    </None>
-    <None Include="packages.config" />
     <None Include="Properties\AssemblyInfo.cs.tpl" />
     <None Condition=" '$(Configuration)' == 'Release' " Include="settings-rel.cfg">
       <Link>settings.cfg</Link>
@@ -290,9 +275,6 @@
     <None Condition=" '$(Configuration)' == 'Debug' " Include="settings.cfg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Setup Midi Smf Tool.iss" />
-    <None Include="SvnInfo.cmd" />
-    <None Include="SvnInfo.proj" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\gen.snd.common\gen.snd.common.csproj">
@@ -303,6 +285,9 @@
       <Project>{3AE94169-B621-4352-9661-E5B293083C14}</Project>
       <Name>gen.snd.vst</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Docs\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <BaseAddress>4194304</BaseAddress>
