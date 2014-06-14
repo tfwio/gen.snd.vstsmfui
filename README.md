@@ -4,7 +4,7 @@ gen.snd.vstsmfui
 VST2.0 host + midi parser test — using NAudio &amp; [VSTNET] --- a prototype successfully
 harnessing our MIDI parser within the context of our IVstHost implementation.
 
-See: [gen.snd] for compilation detail and [issue tracking][issues];  This is the development repository containing a solution (`*.sln`) file loading all `*.csproj` files as well as the dependencies.
+See: [gen.snd] for compilation detail and [issue tracking][issues];
 
 Soon enough, documentation will evolve---explaining where prescedence of bug-fixing is going to start.
 
