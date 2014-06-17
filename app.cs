@@ -31,15 +31,15 @@ namespace modest100
 			Application.SetCompatibleTextRenderingDefault(false);
 			
 			// Customize Time Configuration
-			gen.snd.TimeConfiguration.Instance.Latency = 100;
-			gen.snd.TimeConfiguration.Instance.Rate = 48000;
+			gen.snd.TimeConfiguration.Instance.Latency = 8000;
+			gen.snd.TimeConfiguration.Instance.Rate = 44100;
+
 			ViewCollection = ViewPoint.EnumerateViewTypes<MasterViewContainer>(System.Reflection.Assembly.GetExecutingAssembly());
 			
 			List<string> views = new List<string>();
-			foreach (IViewPoint view in ViewCollection)
-				views.Add(view.Title);
+			foreach (IViewPoint view in ViewCollection) views.Add(view.Title);
 			
-			MessageBox.Show(string.Join("\n",views.ToArray()));
+			// MessageBox.Show(string.Join("\n",views.ToArray()));
 			Application.Run( new ModestForm(ViewCollection) );
 //			try { Application.Run( container.GetExportedValue<ModestForm>() ); }
 //			catch (Exception ex) {

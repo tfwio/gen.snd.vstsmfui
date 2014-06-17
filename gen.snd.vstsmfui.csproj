@@ -14,8 +14,8 @@
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
-    <DocumentationFile>bin\Debug\MidiSmf.xml</DocumentationFile>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+    <DocumentationFile>$(OutputPath)\MidiSmf.xml</DocumentationFile>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\gen.snd.common\gen.snd.common.snk</AssemblyOriginatorKeyFile>
@@ -79,14 +79,19 @@
       <Link>Source\Common.Extensions\TextEditorUtil.cs</Link>
     </Compile>
     <Compile Include="..\gen.snd.common\Source\Interop\WinMM.cs">
-      <Link>Includes\Interop\WinMM.cs</Link>
+      <Link>Source\Includes\Interop\WinMM.cs</Link>
     </Compile>
     <Compile Include="Source\Modules\MidiEventControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Source\Modules\TimeConfigurationView.cs" />
+    <Compile Include="Source\Modules\TimeConfigurationView.Designer.cs">
+      <DependentUpon>TimeConfigurationView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Source\Views\Naudios_VolumeSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Source\Modules\TimeConfigurationContainer.cs" />
     <Compile Include="Source\Views\VolumeSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -99,40 +104,40 @@
     </Compile>
     <Compile Include="Source\Internals\MasterViewContainer.cs" />
     <Compile Include="..\cor3.core\Internals\UndoRedoCommandManager.cs">
-      <Link>Includes\Internals\UndoRedoCommandManager.cs</Link>
+      <Link>Source\Includes\Internals\UndoRedoCommandManager.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\Internals\ViewPoint.cs">
-      <Link>Includes\Internals\ViewPoint.cs</Link>
+      <Link>Source\Includes\Internals\ViewPoint.cs</Link>
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="..\cor3.core\System.Windows.Forms\SplashForm.cs">
-      <Link>Includes\Core\SplashForm.cs</Link>
+      <Link>Source\Includes\Core\SplashForm.cs</Link>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="..\cor3.core\System\ControlUtil.cs">
-      <Link>Includes\Core\ControlUtil.cs</Link>
+      <Link>Source\Includes\Core\ControlUtil.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\System\DoubleMathExtension.cs">
-      <Link>Includes\Core\DoubleMathExtension.cs</Link>
+      <Link>Source\Includes\Core\DoubleMathExtension.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\System\EnumExtension.cs">
-      <Link>Includes\Core\EnumExtension.cs</Link>
+      <Link>Source\Includes\Core\EnumExtension.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\System\Serial.cs">
-      <Link>Includes\Core\Serial.cs</Link>
+      <Link>Source\Includes\Core\Serial.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\System\System.DialogUtil.cs">
-      <Link>Includes\Core\System.DialogUtil.cs</Link>
+      <Link>Source\Includes\Core\System.DialogUtil.cs</Link>
     </Compile>
     <Compile Include="..\cor3.core\System\WTF.cs">
-      <Link>Includes\Core\WTF.cs</Link>
+      <Link>Source\Includes\Core\WTF.cs</Link>
     </Compile>
     <Compile Include="..\cor3.forms\Forms\ToolStrip\ToolStripUpDown.cs">
-      <Link>Includes\Core\ToolStripUpDown.cs</Link>
+      <Link>Source\Includes\Core\ToolStripUpDown.cs</Link>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="..\cor3.forms\Forms\WinTheme.cs">
-      <Link>Includes\Interop\WinTheme.cs</Link>
+      <Link>Source\Includes\Interop\WinTheme.cs</Link>
     </Compile>
     <Compile Include="Source\Internals\MouseState.cs" />
     <Compile Include="Source\Internals\MouseStateExtension.cs" />
