@@ -2,7 +2,7 @@ gen.snd.vstsmfui
 ================
 
 VST2.0 host + midi parser test — using NAudio &amp; [VSTNET] --- a prototype successfully
-harnessing our MIDI parser within the context of our IVstHost implementation, albeit
+harnessing our MIDI parser within the context of IVstHost implementation, albeit
 the audio-processing needs a general re-write.
 
 See: [gen.snd] for compilation detail and [issue tracking][issues];
