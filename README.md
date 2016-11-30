@@ -1,3 +1,7 @@
+> OBSOLETE — all USEFUL/RELATED sources are under one hood now https://github.com/tfwio/modest-smf-vstnet
+
+----
+
 gen.snd.vstsmfui
 ================
 
